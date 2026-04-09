@@ -3,13 +3,20 @@ body {
     font-size: 28px;
     background: #bfccf3;
 }
+.seller { 
+    margin: 0 300px;
+}
 * {
     box-sizing: border-box; 
+    list-style: none
+}
+a {
+    color: inherit;
+    text-decoration: none;
 }
 :root {
     --blue: #5b7cff;
     --white: #f7f9ff;
-
 }
 
 .button1 {
@@ -26,11 +33,30 @@ body {
 }
 .nav {
     display: flex;
+    position: sticky;
+    top: 0;
     padding: 40px;
     justify-content: space-between;
     align-items: center;
     background: rgba(247, 249, 255, 0.84)
 }
+.H_nav {
+    display: none;
+    background: #fff;
+    position: absolute;
+    margin: 30px 80px;
+    border-radius: 30px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.H_14:hover,  .H_nav:hover{
+    display: block;
+}
+.H_nav:hover {
+    display: block;
+    
+}
+
 .logo {
     display: flex;
     justify-content: space-between;
@@ -40,19 +66,61 @@ body {
 .logoImg {
     height: 46px;
     padding: 6px;
-    background: #fff;
+    background: #fff; 
 }
 .home {
     display: flex;
     gap:20px ;
 }
-b {
+
+a {
     padding: 10px;
     border-radius: 14px ;
 }
 
-.table {
+
+.table, .data{
     background: #fff;
-    margin: 80px;
+    margin: 80px 0;
     padding: 30px;
+    border-radius: 30px;
 }
+
+/*subscrip*/
+
+.subscrip {
+    margin: 200px;
+}
+.data {
+    display: flex;
+    white-space: pre-line;
+    gap: 20px;
+}
+.data_block {
+    background: #bfccf3;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+.data_input {
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.social {
+    display: block;
+    white-space: pre-line;
+    color: #2947d1;
+}
+/*hover*/
+.button1:hover  {
+    background: #2947d1;
+}
+.button2:hover {
+    background: #afafaf;
+}
+a:hover {
+    transform: translateY(8px);
+}
+
+/**/
