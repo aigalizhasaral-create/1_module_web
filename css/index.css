@@ -110,7 +110,7 @@ a {
 .social {
     display: block;
     white-space: pre-line;
-    color: #2947d1;
+    color: #2947d1; 
 }
 /*hover*/
 .button1:hover  {
@@ -123,4 +123,8 @@ a:hover {
     transform: translateY(8px);
 }
 
+.active-link {
+    background: #5b7cff;
+    color: #2947d1;
+}
 /**/
