@@ -6,6 +6,10 @@ body {
 .seller { 
     margin: 0 300px;
 }
+.seller-end {
+    padding: 50px 300px;
+    background: #fff;
+}
 b {
     color: #3f5177;
 }
@@ -92,11 +96,12 @@ a {
     border-radius: 14px ;
 }
 .abc3 {
-    background: #fff;
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: baseline;
 }
 
-.table, .table-home, .data, .data-search{
+.table, .table-home, .data, .data-search, .table-home-column{
     background: #fff;
     margin: 80px 0;
     padding: 30px;
@@ -151,6 +156,33 @@ a {
 .map {
     width: 100%;
 }
+.nav-end {
+    display: grid;
+    justify-content: center;
+    grid-gap: 5px;
+    color: #5b7cff;
+}
+
+.questions {
+    margin: 40px 0;
+}
+/*1*/
+.instructions {
+
+}
+.numbering {
+    display: flex;
+    background: #c2ceff;
+    color: #2947d1;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    justify-content: center;
+    align-items: center;
+}   
+.table-home-column {
+    margin: 30px 0;
+}
 /*hover*/
 .button1:hover  {
     background: #2947d1;
@@ -163,7 +195,22 @@ a:hover {
 }
 
 .active-link {
-    background: #5b7cff;
+    background: #c2ceff;;
+    color: #2947d1;
+    padding: 10px;
+    border-radius: 30px;
+}
+/*datalist*/
+details {
+    border: 1px solid #ccc;
+    
+}
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+details[open] summary {
+    margin-bottom: 10px;
     color: #2947d1;
 }
-/**/
