@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body data-page="For_Seller">
-    <nav class="nav">
+    <header class="nav">
             <nav class="logo">
                 <img class="logoImg" src="media-files/logo.png" alt="">
                 <span>
@@ -17,13 +17,14 @@
             </nav>
             <span class="home">
                 <a data-page-link="Home" href="Home.html">Home</a>
-                <a data-page-link="For_Seller" href="1.html">For Seller
+                <div class="For_Seller">
+                    <a data-page-link="For_Seller" href="1.html">For Seller</a>
                     <li class="H_nav">
-                        <a href="1.html"><br>Advantages</a>
-                        <a href="4.html"><br>Paid Services</a>
-                        <a href="1.html"><br>FAQ</a>
+                        <a href="1.html">Advantages</a>
+                        <a href="2.html">Paid Services</a>
+                        <a href="1.html">FAQ</a>
                     </li>
-                </a>
+                </div>
                 <a data-page-link="For_Buyer" href="3.html">For Buyer</a>
                 <a data-page-link="Contacts" href="subscription.html">Contacts</a>
                 <a data-page-link="Policy" href="policy.html">Policy</a>
@@ -32,7 +33,97 @@
                 <a class="button1" data-role="publish-link" href="1.html">Publish</a>
                 <a class="button2" data-role="view-link" href="3.html">View</a>
             </doubButton>
-    </nav>
+    </header>
+    <main class="seller">
+        <div class="table">
+            <div>
+                <span class="active-link">For Seller / Paid Services</span>
+                <h1>Платные услуги для продвижения объявления</h1>
+                <span>На этой странице есть прайс-лист, преимущества продвижения и FAQ. Для каждой услуги можно выбрать срок через ползунок range.</span>
+            </div>
+            <aside class="hero-panel">
+                <ul>
+                    <li class="point">
+                        <h3>Выбор срока</h3>
+                        <span>Вместо сложных расчётов используется простой range, который переключает готовые варианты: 1, 2, 10 и 30 дней.</span>  
+                    </li>
+                    <li class="point">
+                        <h3>Простая логика</h3>
+                        <span>Цены берутся из config.js, поэтому их легко изменить в одном месте.</span>  
+                    </li>
+                    <li class="point">
+                        <h3>Понятная вёрстка</h3>
+                        <span>Каждая услуга оформлена одинаково, чтобы код было легче читать и повторять.</span>  
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <div>
+        <h1>Прайс-лист</h1>
+        <b>Цены и сроки взяты из задания. Ползунок выбирает один из доступных сроков и сразу показывает итоговую стоимость.</b>
+        </div>
+        <div class="home">
+            <aside class="abc" id="abc">
+                <article class="table-home" data-service="">
+                    <h3>Выделение объявления цветом</h3>
+                    <li>Ваше объявление будет выделено цветом в списке, что делает его более заметным.</li>
+                    <h3>Количество дней</h3>    
+                    <div>
+                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
+                    </div>
+                    <li>1 дн.</li>
+                </article>
+                <article class="table-home" data-service="raise">
+                    <h3>Поднятие объявления в списке</h3>
+                    <li>Автоматическое поднятие в начало списка один раз в сутки.</li>
+                    <h3>Количество дней</h3>    
+                    <div>
+                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
+                    </div>
+                    <div>
+                        <span class="days"></span>
+                        <span class="dollar"></span>
+                    </div>
+                </article>
+                <article class="table-home" data-service="pin">
+                    <h3>Закрепление в верхней части категориичйФЙ</h3>
+                    <li>Объявление отображается первым в списке своей категории.</li>
+                    <h3>Количество дней</h3>    
+                    <div>
+                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
+                    </div>
+                    <div>
+                        <span class="days"></span>
+                        <span class="dollar"></span>
+                    </div>
+                </article>
+                <article class="table-home" data-service="home">
+                    <h3>Размещение на главной странице</h3>
+                    <li>Объявление отображается в специальном блоке на главной.</li>
+                    <h3>Количество дней</h3>    
+                    <div>
+                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
+                    </div>
+                    <div>
+                        <span class="days"></span>
+                        <span class="dollar"></span>
+                    </div>
+                </article>
+                <article class="table-home" data-service="premium">
+                    <h3>Пакет «Премиум»</h3>
+                    <li>Включает все вышеперечисленные функции. Максимальная эффективность по выгодной цене.</li>
+                    <h3>Количество дней</h3>    
+                    <div>
+                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
+                    </div>
+                    <div>
+                        <span class="days"></span>
+                        <span class="dollar"></span>
+                    </div>
+                </article>
+            </aside>
+        </div>
+    </main>
 </body>
 </html>
 <script defer src="./js/main.js"></script>

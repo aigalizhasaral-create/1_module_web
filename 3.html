@@ -8,35 +8,36 @@
 </head>
 <body data-page="buyer">
     <nav class="nav">
-            <nav class="logo">
+            <div class="logo">
                 <img class="logoImg" src="media-files/logo.png" alt="">
                 <span>
                     "COLLECTO"
                     <small><br>Marketplace for collectors</small>
                 </span>
-            </nav>
-            <span class="home">
+            </div>
+            <div class="home">
                 <a data-page-link="Home" href="Home.html">Home</a>
-                <a data-page-link="For_Seller" href="1.html">For Seller
+                <div class="For_Seller">
+                    <a data-page-link="For_Seller" href="1.html">For Seller</a>
                     <li class="H_nav">
-                        <a href="1.html"><br>Advantages</a>
-                        <a href="4.html"><br>Paid Services</a>
-                        <a href="1.html"><br>FAQ</a>
+                        <a href="1.html">Advantages</a>
+                        <a href="4.html">Paid Services</a>
+                        <a href="1.html">FAQ</a>
                     </li>
-                </a>
-                <a data-page-link="For_Buyer" href="3.html">For Buyer</a>
+                </div>
+                <a data-page-link="buyer" href="3.html">For Buyer</a>
                 <a data-page-link="Contacts" href="subscription.html">Contacts</a>
                 <a data-page-link="Policy" href="policy.html">Policy</a>
-            </span>
-            <doubButton>
+            </div>
+            <div>
                 <a class="button1" data-role="publish-link" href="1.html">Publish</a>
                 <a class="button2" data-role="view-link" href="3.html">View</a>
-            </doubButton>
+            </div>
     </nav>
-    <div class="seller">
+    <main class="seller">
         <div class="table">
             <div>
-                <span class="button2">For Buyer</span>
+                <span class="active-link">For Buyer</span>
                 <h1>Находите желаемые коллекционные товары легко и уверенно</h1>
                 <span>Страница покупателя объясняет пошаговый путь поиска и покупки товара, показывает преимущества платформы и отвечает на частые вопросы.</span>
                 <span class="home">
@@ -131,27 +132,44 @@
                 <summary>А для чего это вообще нужно?</summary>
                 <p>Такие площадки помогают людям находить нужные товары напрямую у продавцов. Это удобно, быстро и часто дешевле, чем в магазинах.</p>
             </details>
-            <details>
-                <summary class="table-home">А как всё это работает?</summary>
+            <details class="table-home">
+                <summary>А как всё это работает?</summary>
                 <p>Вы находите интересующий вас товар, связываетесь с продавцом, обсуждаете детали, а затем договариваетесь о передаче и оплате. Всё просто и понятно.</p>
             </details>
-            <details>
-                <summary class="table-home">А безопасно ли это?</summary>
+            <details class="table-home">
+                <summary>А безопасно ли это?</summary>
                 <p>Как и в любой сделке между людьми, важно соблюдать осторожность. Не переводите деньги заранее, проверяйте товар лично при встрече и доверяйте своей интуиции.</p>
             </details>
-            <details>
-                <summary class="table-home">А что делать, если меня обманут?</summary>
+            <details class="table-home">
+                <summary>А что делать, если меня обманут?</summary>
                 <p>К сожалению, риски есть везде. Чтобы их минимизировать, пользуйтесь только проверенными способами связи, встречайтесь в общественных местах и не соглашайтесь на подозрительные условия.</p>
             </details>
-            <details>
-                <summary class="table-home">А если я передумаю?</summary>
+            <details class="table-home">
+                <summary>А если я передумаю?</summary>
                 <p>Такое бывает. Лучше заранее обсудить возможность отмены сделки с продавцом и договориться обо всём до передачи денег или товара.</p>
             </details>
-            <details>
-                <summary class="table-home">А почему дешевле, чем в магазине?</summary>
+            <details class="table-home">
+                <summary>А почему дешевле, чем в магазине?</summary>
                 <p>Такодействительно заинтересован.</p>
             </details>
         </div>
+    </main>
+    <footer class="seller-end">
+        <div class="abc3">
+            <div>
+                <div><h3>COLLECTORA</h3>
+                Упрощённая учебная версия проекта по Module A Страницы связаны общей навигацией, адаптивной вёрсткой, микро-анимациями и единым стилем.</div>
+            </div>
+            <ul class="nav-end">
+                <a data-page-link="Home" href="index.html">Home</a>
+                <a data-page-link="For_Seller" href="1.html">For Seller</a>
+                <a data-page-link="For_Buyer" href="3.html">For Buyer</a>
+                <a data-page-link="Contacts" href="subscription.html">Contacts</a>
+                <a data-page-link="Policy" href="policy.html">Policy</a>
+            </ul>
+            <div>Кнопки Publish и View можно быстро перенастроить в файле js/config.js.</div>
+        </div>
+    </footer>
 </body>
 </html>
 <script defer src="./js/main.js"></script>
