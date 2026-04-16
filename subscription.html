@@ -7,80 +7,99 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body data-page="Contacts">
-    <nav class="nav">
-            <nav class="logo">
-                <img class="logoImg" src="media-files/logo.png" alt="">
-                <span>
-                    "COLLECTO"
-                    <small><br>Marketplace for collectors</small>
-                </span>
-            </nav>
-            <span class="home">
-                <a data-page-link="Home" href="Home.html">Home</a>
-                <div class="For_Seller">
-                    <a data-page-link="For_Seller" href="1.html">For Seller</a>
-                    <li class="H_nav">
-                        <a href="1.html">Advantages</a>
-                        <a href="2.html">Paid Services</a>
-                        <a href="1.html">FAQ</a>
-                    </li>
-                </div>
-                <a data-page-link="For_Buyer" href="3.html">For Buyer</a>
-                <a data-page-link="Contacts" href="subscription.html">Contacts</a>
-                <a data-page-link="Policy" href="policy.html">Policy</a>
+    <header class="nav">
+        <nav class="logo">
+            <img class="logoImg" src="media-files/logo.png" alt="">
+            <span>
+                "COLLECTO"
+                <small><br>Marketplace for collectors</small>
             </span>
-            <doubButton>
-                <a class="button1" data-role="publish-link" href="1.html">Publish</a>
-                <a class="button2" data-role="view-link" href="3.html">View</a>
-            </doubButton>
-    </nav>
-    <header class="subscrip">
-        <span class="data">
-            <div class="data_block">
-            <span class="button2">Contacts</span>
-            <h1>Свяжитесь с командой сервиса</h1>
-            <span>На странице контактов есть форма обратной связи, контактная информация, ссылки на социальные сети и карта с корректным путём к изображению.</span>
+        </nav>
+        <span class="home">
+            <a data-page-link="Home" href="Home.html">Home</a>
+            <div class="For_Seller">
+                <a data-page-link="For_Seller" href="1.html">For Seller</a>
+                <li class="H_nav">
+                    <a href="1.html#premium">Advantages</a>
+                    <a href="2.html">Paid Services</a>
+                    <a href="1.html#FAQ">FAQ</a>
+                </li>
             </div>
-            <div class="data_block">
-                <span>
-                    Имя
-                        <input class="data_input" placeholder="Ваше имя"></input>
-                </span>
-                <span>
-                    Email
-                        <input class="data_input" placeholder="Ваше Email"></input>
-                </span>
-                <span>
-                    Описаниме (не обязательно)
-                        <input class="data_input" placeholder="Ваше Описаниме"></input>
-                </span>
-            </div>
+            <a data-page-link="For_Buyer" href="3.html">For Buyer</a>
+            <a data-page-link="Contacts" href="subscription.html">Contacts</a>
+            <a data-page-link="Policy" href="policy.html">Policy</a>
         </span>
+        <doubButton>
+            <a class="button1" data-role="publish-link" href="1.html">Publish</a>
+            <a class="button2" data-role="view-link" href="3.html">View</a>
+        </doubButton>
+    </header>
+    <main>
+        <div class="table">
+            <div>
+                <span class="active-link">Contacts</span>
+                <h1>Свяжитесь с командой сервиса</h1>
+                <span>На странице контактов есть форма обратной связи, контактная информация, ссылки на социальные сети и карта с корректным путём к изображению.</span>
+                <span class="home">
+                    <a class="button1">Опубликовать</a>
+                    <a class="button2">Платные услуги</a>
+                </span>
+            </div>
+            <aside class="hero-panel">
+                <ul>
+                    <li class="point">
+                        <h3>Email</h3>
+                        <span>support@example.com</span>  
+                    </li>
+                    <li class="point">
+                        <h3>Часы работы</h3>
+                        <span>Пн–Пт, с 9:00 до 18:00</span>  
+                    </li>
+                    <li class="point">
+                        <h3>Социальные сети</h3>
+                        <span>Instagram, Facebook, Telegram, X и LinkedIn</span>  
+                    </li>
+                </ul>
+            </aside>
+        </div>
 
-        <div class="home">
-            <div class="point">
+        <div class="abc">
+            <div class="table-home">
                 <h1>Контактная информация</h1>
                 <li>Электронная почта: support@example.com</lin>
                 <li>Часы работы: Пн–Пт, с 9:00 до 18:00 (по местному времени)</li>
             </div>  
-            <div>
-                <div class="point">
-                    <h1>Социальные сети</h1>
-                    <div class="social">
-                        <span>Instagram</span>
-                        <span>Facebook</span>
-                        <span>Telegram</span>
-                        <span>X</span>
-                        <span>LinkedIn</span>
-                    </div>
+            <div class="table-home">
+                <h1>Социальные сети</h1>
+                <div class="social">
+                    <a href="https://instagram.com/example">Instagram</a>
+                    <a href="https://facebook.com/example">Facebook</a>
+                    <a href="https://t.me/example">Telegram</a>
+                    <a href="https://x.com/example">X</a>
+                    <a href="https://linkedin.com/company/example">LinkedIn</a>
                 </div>
             </div>
         </div>
         <span class="data">
             <img class="map" src="./media-files/map.png" alt="">
-        </span>
-    </header>
-        
+        </span> 
+    </main>
+    <footer class="seller-end">
+        <div class="abc3">
+            <div>
+                <div><h3>COLLECTORA</h3>
+                Упрощённая учебная версия проекта по Module A Страницы связаны общей навигацией, адаптивной вёрсткой, микро-анимациями и единым стилем.</div>
+            </div>
+            <ul class="nav-end">
+                <a data-page-link="Home" href="index.html">Home</a>
+                <a data-page-link="For_Seller" href="1.html">For Seller</a>
+                <a data-page-link="For_Buyer" href="3.html">For Buyer</a>
+                <a data-page-link="Contacts" href="subscription.html">Contacts</a>
+                <a data-page-link="Policy" href="policy.html">Policy</a>
+            </ul>
+            <div>Кнопки Publish и View можно быстро перенастроить в файле js/config.js.</div>
+        </div>
+    </footer>
 </body>
 </html>
 <script defer src="js/main.js"></script>

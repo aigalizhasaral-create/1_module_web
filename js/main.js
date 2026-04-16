@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     bottonActive();
     configEditor();
+    setupPriceRanges();
+    setupContact();
     console.log(2);
 });
 
@@ -30,11 +32,40 @@ function configEditor() {
     });
 }
 
-function configEditor() {
-    if (!window.APP_CONFIG) return;
-    var highlight = document.getElementsByClassName('highlight')
-    var days = document.getElementsByClassName('days')
-    var dollar = document.getElementsByClassName('dollar')
-    var option = window.APP_CONFIG.
+function setupPriceRanges() {
+    var cards = document.querySelectorAll('[data-service]');
+    
+    cards.forEach(function (card) {
+        var serviceName = card.getAttribute('data-service')
+        var range = card.querySelector('input[type="range"]')
+        var daysOutput = card.querySelector('[data-days-output]')
+        var priceOutput = card.querySelector('[data-price-output]')
+        var options = window.APP_CONFIG.serviceOptions[serviceName]
 
+    if (!range || !options) return
+    
+    function updataCard() {
+        var optionIndex = Number(range.value)
+        var option = options[optionIndex]
+        daysOutput.textContent = option.days + 'дн.'
+        priceOutput.textContent = '$' + option.price.toFixed(2)
+    }
+    range.addEventListener('input', updataCard)
+    updataCard()
+}) 
+}
+
+function setupContact() {
+    var form = document.querySelector('[data-contact-form]')
+    if (!form) return
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        var message = form.querySelector('[data-form-message]')
+        if (message) {
+            message.classList.add('show')
+            message.textContent = 'Форма работает как демонстрация. Для реальной отправки можно подключить серверную обработку.'
+        }
+        form.reset()
+    })
 }

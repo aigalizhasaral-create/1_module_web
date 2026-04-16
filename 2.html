@@ -20,9 +20,9 @@
                 <div class="For_Seller">
                     <a data-page-link="For_Seller" href="1.html">For Seller</a>
                     <li class="H_nav">
-                        <a href="1.html">Advantages</a>
+                        <a href="1.html#premium">Advantages</a>
                         <a href="2.html">Paid Services</a>
-                        <a href="1.html">FAQ</a>
+                        <a href="1.html#FAQ">FAQ</a>
                     </li>
                 </div>
                 <a data-page-link="For_Buyer" href="3.html">For Buyer</a>
@@ -34,7 +34,7 @@
                 <a class="button2" data-role="view-link" href="3.html">View</a>
             </doubButton>
     </header>
-    <main class="seller">
+    <main>
         <div class="table">
             <div>
                 <span class="active-link">For Seller / Paid Services</span>
@@ -64,25 +64,22 @@
         </div>
         <div class="home">
             <aside class="abc" id="abc">
-                <article class="table-home" data-service="">
+                <article class="table-home" data-service="highlight">
                     <h3>Выделение объявления цветом</h3>
                     <li>Ваше объявление будет выделено цветом в списке, что делает его более заметным.</li>
                     <h3>Количество дней</h3>    
                     <div>
-                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
+                        <input class="highlight" type="range" min="0" max="3"step="1" value="0">
+                        <div class="range-meta"><span class="price-days" data-days-output></span><span class="price-total" data-price-output></span></div>
                     </div>
-                    <li>1 дн.</li>
                 </article>
                 <article class="table-home" data-service="raise">
                     <h3>Поднятие объявления в списке</h3>
                     <li>Автоматическое поднятие в начало списка один раз в сутки.</li>
                     <h3>Количество дней</h3>    
                     <div>
-                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
-                    </div>
-                    <div>
-                        <span class="days"></span>
-                        <span class="dollar"></span>
+                        <input class="highlight" type="range" min="0" max="3"step="1" value="0">
+                        <div class="range-meta"><span class="price-days" data-days-output></span><span class="price-total" data-price-output></span></div>
                     </div>
                 </article>
                 <article class="table-home" data-service="pin">
@@ -90,11 +87,8 @@
                     <li>Объявление отображается первым в списке своей категории.</li>
                     <h3>Количество дней</h3>    
                     <div>
-                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
-                    </div>
-                    <div>
-                        <span class="days"></span>
-                        <span class="dollar"></span>
+                        <input class="highlight" type="range" min="0" max="3"step="1" value="0">
+                        <div class="range-meta"><span class="price-days" data-days-output></span><span class="price-total" data-price-output></span></div>
                     </div>
                 </article>
                 <article class="table-home" data-service="home">
@@ -102,11 +96,8 @@
                     <li>Объявление отображается в специальном блоке на главной.</li>
                     <h3>Количество дней</h3>    
                     <div>
-                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
-                    </div>
-                    <div>
-                        <span class="days"></span>
-                        <span class="dollar"></span>
+                        <input class="highlight" type="range" min="0" max="3"step="1" value="0">
+                        <div class="range-meta"><span class="price-days" data-days-output></span><span class="price-total" data-price-output></span></div>
                     </div>
                 </article>
                 <article class="table-home" data-service="premium">
@@ -114,11 +105,8 @@
                     <li>Включает все вышеперечисленные функции. Максимальная эффективность по выгодной цене.</li>
                     <h3>Количество дней</h3>    
                     <div>
-                        <input class="highlight" type="range" min="1" max="3"step="1" value="0">
-                    </div>
-                    <div>
-                        <span class="days"></span>
-                        <span class="dollar"></span>
+                        <input class="highlight" type="range" min="0" max="3"step="1" value="0">
+                        <div class="range-meta"><span class="price-days" data-days-output></span><span class="price-total" data-price-output></span></div>
                     </div>
                 </article>
             </aside>
@@ -126,4 +114,5 @@
     </main>
 </body>
 </html>
+<script defer src="./js/config.js"></script>
 <script defer src="./js/main.js"></script>
